@@ -1,4 +1,4 @@
-# Oh My Zsh Installer for Docker
+# Oh My Zsh Installer
 
 [![Last Release](https://img.shields.io/github/v/release/deluan/zsh-in-docker?label=latest&style=flat-square)](https://github.com/deluan/zsh-in-docker/releases/latest)
 [![Build](https://img.shields.io/github/actions/workflow/status/deluan/zsh-in-docker/test.yml?branch=master&style=flat-square)](https://github.com/deluan/zsh-in-docker/actions)
@@ -19,6 +19,11 @@ One line installation: add the following line in your `Dockerfile`:
 ```Dockerfile
 # Default powerline10k theme, no plugins installed
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)"
+```
+or use shell:
+
+```shell
+sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)"
 ```
 
 #### Optional arguments:
@@ -85,8 +90,4 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
   customizable themes available for zsh. If you want the default Oh My Zsh theme, use the option
   `-t robbyrussell`
   
-## Liked it?
 
-If you like this script, feel free to thank me with a coffee (or a beer :wink:):
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K21VMDV)
