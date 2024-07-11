@@ -22,8 +22,8 @@
 
 set -e
 
-THEME=default
-PLUGINS=""
+THEME=eastwood
+PLUGINS="zsh-syntax-highlighting zsh-autosuggestions"
 ZSHRC_APPEND=""
 INSTALL_DEPENDENCIES=true
 
