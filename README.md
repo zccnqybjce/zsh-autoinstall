@@ -1,8 +1,8 @@
 # Oh My Zsh Installer
 
-[![Last Release](https://img.shields.io/github/v/release/deluan/zsh-in-docker?label=latest&style=flat-square)](https://github.com/deluan/zsh-in-docker/releases/latest)
-[![Build](https://img.shields.io/github/actions/workflow/status/deluan/zsh-in-docker/test.yml?branch=master&style=flat-square)](https://github.com/deluan/zsh-in-docker/actions)
-[![Downloads](https://img.shields.io/github/downloads/deluan/zsh-in-docker/total?style=flat-square)](https://github.com/deluan/zsh-in-docker/releases)
+[![Last Release](https://img.shields.io/github/v/release/zccnqybjce/zsh-autoinstall?label=latest&style=flat-square)](https://github.com/zccnqybjce/zsh-autoinstall/releases/latest)
+[![Build](https://img.shields.io/github/actions/workflow/status/zccnqybjce/zsh-autoinstall/test.yml?branch=master&style=flat-square)](https://github.com/zccnqybjce/zsh-autoinstall/actions)
+[![Downloads](https://img.shields.io/github/downloads/zccnqybjce/zsh-autoinstall/total?style=flat-square)](https://github.com/zccnqybjce/zsh-autoinstall/releases)
 
 
 This is a script to automate [Oh My Zsh](https://ohmyz.sh/) installation in development containers.
@@ -18,12 +18,12 @@ One line installation: add the following line in your `Dockerfile`:
 
 ```Dockerfile
 # Default powerline10k theme, no plugins installed
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)"
+RUN sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)"
 ```
 or use shell:
 
 ```shell
-sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)"
+sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)"
 ```
 
 #### Optional arguments:
@@ -40,7 +40,7 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2
   For example, if you want to enable [case sensitive completion](https://stackoverflow.com/a/28021691):
 
   ```Dockerfile
-  RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
+  RUN sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)" -- \
   -a 'CASE_SENSITIVE="true"'
   ```
 
@@ -53,13 +53,13 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2
 
 ```Dockerfile
 # Uses "robbyrussell" theme (original Oh My Zsh theme), with no plugins
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)" -- \
     -t robbyrussell
 ```
 
 ```Dockerfile
 # Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)" -- \
     -p git -p ssh-agent -p 'history-substring-search' \
     -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
     -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
@@ -68,7 +68,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 
 ```Dockerfile
 # Uses "Spaceship" theme with some customization. Uses some bundled plugins and installs some more from github
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://github.com/zccnqybjce/zsh-autoinstall/releases/download/v1.0.0/zsh-in-docker.sh)" -- \
     -t https://github.com/denysdovhan/spaceship-prompt \
     -a 'SPACESHIP_PROMPT_ADD_NEWLINE="false"' \
     -a 'SPACESHIP_PROMPT_SEPARATE_LINE="false"' \
