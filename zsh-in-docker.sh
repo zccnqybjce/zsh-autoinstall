@@ -157,10 +157,13 @@ fi
 
 # Generate plugin list
 plugin_list=""
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 for plugin in $PLUGINS; do
     if [ "$(echo "$plugin" | grep -E '^http.*')" != "" ]; then
         plugin_name=$(basename "$plugin")
         git clone "$plugin" "$HOME"/.oh-my-zsh/custom/plugins/"$plugin_name"
+
     else
         plugin_name=$plugin
     fi
